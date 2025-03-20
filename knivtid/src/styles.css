@@ -1,0 +1,211 @@
+.logo.vanilla:hover {
+  filter: drop-shadow(0 0 2em #ffe21c);
+}
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: #0f0f0f;
+  background-color: #f6f6f6;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Make HTML and body take full viewport height */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Center all content both horizontally and vertically */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Changed from center to flex-start */
+  align-items: center; /* Keep horizontal centering */
+  min-height: 100vh;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Make container center its contents too *
+.container {
+  margin: 0;
+  padding-top: 20px; /* Reduced from 10vh *
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Changed from center *
+  text-align: center;
+  width: 100%;
+  max-width: 1200px; /* Add max-width for better layout on large screens *
+}
+*/
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: 0.75s;
+}
+
+.logo.tauri:hover {
+  filter: drop-shadow(0 0 2em #24c8db);
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+h1 {
+  text-align: center;
+}
+
+input,
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  color: #0f0f0f;
+  background-color: #ffffff;
+  transition: border-color 0.25s;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: #396cd8;
+}
+button:active {
+  border-color: #396cd8;
+  background-color: #e8e8e8;
+}
+
+input,
+button {
+  outline: none;
+}
+
+#greet-input {
+  margin-right: 5px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #f6f6f6;
+    background-color: #2f2f2f;
+  }
+
+  a:hover {
+    color: #24c8db;
+  }
+
+  input,
+  button {
+    color: #ffffff;
+    background-color: #0f0f0f98;
+  }
+  button:active {
+    background-color: #0f0f0f69;
+  }
+}
+
+/* DataTables Custom Styling - Fixed Version */
+
+/* Ensure all DataTables elements are visible */
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_filter,
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_paginate {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Container layout */
+.dataTables_wrapper {
+  padding: 15px 0;
+}
+
+/* Top controls container */
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_filter {
+  margin-bottom: 15px;
+  display: inline-block !important;
+  width: 49% !important;
+}
+
+/* Search box positioning */
+.dataTables_wrapper .dataTables_filter {
+  text-align: left !important;
+}
+
+/* Length (entries per page) positioning */
+.dataTables_wrapper .dataTables_length {
+  text-align: right !important;
+}
+
+/* Bottom controls layout */
+.dataTables_wrapper .dataTables_info {
+  float: left;
+  clear: both;
+  padding-top: 15px;
+}
+
+.dataTables_wrapper .dataTables_paginate {
+  float: right;
+  padding-top: 15px;
+}
+
+/* Fix table header and content alignment */
+table.dataTable thead th, 
+table.dataTable tbody td {
+  text-align: left !important;
+}
+
+/* Search input styling */
+.dataTables_wrapper .dataTables_filter input {
+  margin-left: 10px;
+  min-width: 2000px;
+}
+
+/* Fix pagination button display */
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  display: inline-block !important;
+  margin: 0 3px;
+}
+
+/* Add fixed positioning for the file input area */
+#fileInputArea {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+/* Make the results container have a min-height to reduce layout shifts */
+#resultsContainer {
+  min-height: 400px; /* Adjust based on your needs */
+  width: 100%;
+}
