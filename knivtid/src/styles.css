@@ -147,13 +147,13 @@ button {
 
 /* Container layout */
 .dataTables_wrapper {
-  padding: 15px 0;
+  padding: 40px 0;
 }
 
 /* Top controls container */
 .dataTables_wrapper .dataTables_length,
 .dataTables_wrapper .dataTables_filter {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   display: inline-block !important;
   width: 49% !important;
 }
@@ -172,7 +172,7 @@ button {
 .dataTables_wrapper .dataTables_info {
   float: left;
   clear: both;
-  padding-top: 15px;
+  padding-top: 25px;
 }
 
 .dataTables_wrapper .dataTables_paginate {
